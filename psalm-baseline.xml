@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<files>
+    <file src="src/PrefixedId.php">
+        <UnusedClass ocurrences="1" />
+        <PossiblyUnusedMethod occurrences="2">
+            <code>isValid</code>
+            <code>generate</code>
+        </PossiblyUnusedMethod>
+    </file>
+</files>

@@ -1,0 +1,54 @@
+{
+    "name": "crls-brtlm/prefixed-id",
+    "description": "A PHP implementation of a prefixed ID",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "ulid",
+        "identifier",
+        "prefix"
+    ],
+    "autoload": {
+        "psr-4": {
+            "CrlsBrtlm\\PrefixedId\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CrlsBrtlm\\PrefixedId\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Carlos Bartolome",
+            "email": "carlos.bartolome@live.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0"
+    },
+    "require-dev": {
+        "vimeo/psalm": "^5.13",
+        "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^9",
+        "squizlabs/php_codesniffer": "^3.7",
+        "phpbench/phpbench": "^1.2"
+    },
+    "scripts": {
+        "analyze": [
+            "@psalm",
+            "@phpstan"
+        ],
+        "phpbench": "phpbench run",
+        "phpcs": "phpcs",
+        "phpstan": "phpstan analyse",
+        "phpunit": "phpunit",
+        "psalm": "psalm",
+        "test": [
+            "@phpcs",
+            "@psalm",
+            "@phpstan",
+            "@phpunit"
+        ]
+    }
+}
