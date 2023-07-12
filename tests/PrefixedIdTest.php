@@ -9,13 +9,13 @@ final class PrefixedIdTest extends TestCase
 {
     public function testIsValid(): void
     {
-        $this->assertTrue(PrefixedId::isValid('u_01h52vnd4o736trgkt6sf15gns'));
+        $this->assertTrue(PrefixedId::isValid('u_0tJOPSUMgpcNXZFmMeip'));
     }
 
     public function testGenerate(): void
     {
-        $ulid = PrefixedId::generate('u');
+        $id = PrefixedId::generate('u');
 
-        $this->assertTrue(PrefixedId::isValid((string)$ulid));
+        $this->assertTrue(PrefixedId::isValid((string)$id));
     }
 }

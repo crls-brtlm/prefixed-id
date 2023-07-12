@@ -4,12 +4,12 @@ namespace CrlsBrtlm\PrefixedId;
 
 class PrefixedId
 {
-    public const ENCODING_CHARS = '0123456789abcdefghijklmnopqrstuvwxyz';
-    public const ENCODING_LENGTH = 32;
+    public const ENCODING_CHARS = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    public const ENCODING_LENGTH = 62;
     public const SEPARATOR = '_';
 
-    public const TIME_LENGTH = 10;
-    public const RANDOM_LENGTH = 16;
+    public const TIME_LENGTH = 8;
+    public const RANDOM_LENGTH = 12;
 
     private string $prefix;
 
